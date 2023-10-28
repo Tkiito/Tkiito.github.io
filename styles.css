@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.left-frame {
+    width: 50%;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+.right-frame {
+    width: 50%;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-size: 48px;
+}
+
+button {
+    margin: 5px;
+}
+
+input {
+    width: 40px;
+}
