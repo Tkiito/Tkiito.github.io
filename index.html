@@ -1,1 +1,34 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metronome</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-frame">
+            <button id="startButton">Start</button>
+            <button id="resetButton" disabled>Reset</button>
+            <div>
+                <label for="countEntry">Max Count:</label>
+                <input type="text" id="countEntry" value="4">
+                <button id="updateCountButton">Update</button>
+            </div>
+            <div>
+                <label for="bpmEntry">BPM:</label>
+                <input type="text" id="bpmEntry" value="60">
+                <button id="updateBpmButton">Update</button>
+            </div>
+            <div>
+                <label for="hihatSwitch">Hihat:</label>
+                <input type="checkbox" id="hihatSwitch">
+            </div>
+        </div>
+        <div class="right-frame" id="metronomeLabel">1</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
