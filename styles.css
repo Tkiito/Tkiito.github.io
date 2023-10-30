@@ -1,23 +1,37 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: lightblue;
 }
 
 .container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.left-frame {
-    width: 50%;
+.center-frame {
+    text-align: center;
     padding: 20px;
-    background-color: lightblue;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.right-frame {
-    width: 50%;
-    padding: 20px;
-    background-color: red;
-    color: white;
-    font-size: 48px;
+.controls {
+    display: flex;
+    justify-content: center;
+    background-color: yellowgreen;
+    /* 中央部分の背景色を黄緑に設定 */
+}
+
+.control-group {
+    margin: 10px;
+}
+
+.hihat-group {
+    margin-top: 10px;
 }
 
 button {
@@ -26,4 +40,9 @@ button {
 
 input {
     width: 40px;
+}
+
+#metronomeLabel {
+    font-size: 5em;
+    /* カウントの数字のフォントサイズを調整（5emは5倍の大きさ） */
 }
